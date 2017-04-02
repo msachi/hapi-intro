@@ -4,7 +4,7 @@
   "description": "_Before we start, please clone this repo. It contains the `public` folder with some example files (`html`,`css`,`js`) which we will practice serving using hapi. If you prefer you can create your own `public` folder with arbitrary files._",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start": "nodemon src/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
