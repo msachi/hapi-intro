@@ -1,0 +1,24 @@
+{
+  "name": "hapi-intro",
+  "version": "1.0.0",
+  "description": "_Before we start, please clone this repo. It contains the `public` folder with some example files (`html`,`css`,`js`) which we will practice serving using hapi. If you prefer you can create your own `public` folder with arbitrary files._",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msachi/hapi-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msachi/hapi-intro/issues"
+  },
+  "homepage": "https://github.com/msachi/hapi-intro#readme",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.1.0"
+  }
+}
