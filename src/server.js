@@ -1,39 +1,16 @@
 const hapi = require('hapi');
 const server = new hapi.Server();
 const inert = require('inert');
+const routes = require('./routes');
 
 server.connection({
   host: 'localhost',
   port: 3000
 });
 
-server.route({
-  method: 'GET',
-  path: '/hello',
-  handler: (request, reply) => {
-    reply('Hello world!');
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/user/{name}',
-  handler: (request, reply) => {
-    reply(`Hello ${encodeURIComponent(request.params.name)}`);
-  }
-});
-
 server.register(inert, err => {
   if (err) throw err;
-  server.route({
-    method: 'GET',
-    path: '/{file*}',
-    handler: {
-      directory: {
-        path: 'public/'
-      }
-    }
-  });
+  server.route(routes);
 });
 
 server.start(err => {
