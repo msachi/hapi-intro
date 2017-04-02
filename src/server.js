@@ -1,3 +1,5 @@
+'use strict'
+
 const hapi = require('hapi');
 const server = new hapi.Server();
 const inert = require('inert');
@@ -19,7 +21,7 @@ server.route({
   method: 'GET',
   path: '/user/{name}',
   handler: (request, reply) => {
-    reply(`Hello ${encodeURIComponent(request.params.name)}`);
+    reply(`Hello ${encodeURIComponent(request.params.name)}!`);
   }
 });
 
