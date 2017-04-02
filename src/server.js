@@ -1,3 +1,5 @@
+'use strict'
+
 const hapi = require('hapi');
 const server = new hapi.Server();
 const inert = require('inert');
@@ -13,7 +15,4 @@ server.register(inert, err => {
   server.route(routes);
 });
 
-server.start(err => {
-  if (err) throw err;
-  console.log(`Server running at ${server.info.uri}`);
-})
+module.exports = server;

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "hapi-intro",
   "version": "1.0.0",
   "description": "_Before we start, please clone this repo. It contains the `public` folder with some example files (`html`,`css`,`js`) which we will practice serving using hapi. If you prefer you can create your own `public` folder with arbitrary files._",
@@ -19,6 +20,20 @@
   "homepage": "https://github.com/msachi/hapi-intro#readme",
   "dependencies": {
     "hapi": "^16.1.1",
+=======
+  "name": "hapi-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.0",
+>>>>>>> e0543a7203d5dbc77b05565e92f886c72161e435
     "inert": "^4.1.0"
   }
 }
